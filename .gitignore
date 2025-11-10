@@ -1,0 +1,18 @@
+# Bỏ qua file cấu hình DB
+src/java/config/db.properties
+
+# NetBeans build folder
+/nbproject/private/
+/build/
+/dist/
+
+# Các file hệ thống
+*.log
+*.tmp
+*.class
+*.DS_Store
+Thumbs.db
+
+# IntelliJ / VSCode
+/.idea/
+/.vscode/
