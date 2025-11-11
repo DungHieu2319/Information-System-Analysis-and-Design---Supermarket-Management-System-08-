@@ -6,8 +6,50 @@ package Model;
 
 /**
  *
- * @author Lenovo
+ * @author Tran Tien Dung - B22DCAT054
  */
 public class OrderProductDetail {
+    private int id;
+    private float quantity;
+    private float price;
+    private Product product;
+
+    public OrderProductDetail() {
+    }
+
+    public OrderProductDetail(int id, float quantity, float price, Product product) {
+        this.id = id;
+        this.quantity = quantity;
+        this.price = price;
+        this.product = product;
+    }
+
+    public int getId() {
+        return id;
+    }
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public float getQuantity() {
+        return quantity;
+    }
+    public void setQuantity(float quantity) {
+        this.quantity = quantity;
+    }
+
+    public float getPrice() {
+        return price;
+    }
+    public void setPrice(float price) {
+        this.price = price;
+    }
+
+    public Product getProduct() {
+        return product;
+    }
+    public void setProduct(Product product) {
+        this.product = product;
+    }
     
 }
