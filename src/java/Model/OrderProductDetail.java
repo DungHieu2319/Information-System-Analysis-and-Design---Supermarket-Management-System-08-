@@ -10,14 +10,14 @@ package Model;
  */
 public class OrderProductDetail {
     private int id;
-    private float quantity;
-    private float price;
+    private double quantity;
+    private double price;
     private Product product;
 
     public OrderProductDetail() {
     }
 
-    public OrderProductDetail(int id, float quantity, float price, Product product) {
+    public OrderProductDetail(int id, double quantity, double price, Product product) {
         this.id = id;
         this.quantity = quantity;
         this.price = price;
@@ -31,17 +31,17 @@ public class OrderProductDetail {
         this.id = id;
     }
 
-    public float getQuantity() {
+    public double getQuantity() {
         return quantity;
     }
-    public void setQuantity(float quantity) {
+    public void setQuantity(double quantity) {
         this.quantity = quantity;
     }
 
-    public float getPrice() {
+    public double getPrice() {
         return price;
     }
-    public void setPrice(float price) {
+    public void setPrice(double price) {
         this.price = price;
     }
 

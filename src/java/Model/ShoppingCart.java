@@ -21,7 +21,7 @@ public class ShoppingCart {
 
     public ShoppingCart(int id, List<ShoppingCartProductDetail> listProduct) {
         this.id = id;
-        this.listProduct = listProduct;
+        this.listProduct = listProduct != null ? listProduct : new ArrayList<>();
     }
 
     public int getId() {
@@ -35,7 +35,7 @@ public class ShoppingCart {
         return listProduct;
     }
     public void setListProduct(List<ShoppingCartProductDetail> listProduct) {
-        this.listProduct = listProduct;
+        this.listProduct = listProduct != null ? listProduct : new ArrayList<>();
     }
     
 }

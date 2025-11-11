@@ -4,7 +4,8 @@
  */
 package Model;
 
-import java.security.Timestamp;
+import java.sql.Timestamp;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -14,7 +15,7 @@ import java.util.List;
 public class Order {
     private int id;
     private Timestamp orderDate;
-    private float totalPrice;
+    private double totalPrice;
     private String status;
     private Customer customer;
     private List<OrderProductDetail> listProduct;
@@ -22,13 +23,13 @@ public class Order {
     public Order() {
     }
 
-    public Order(int id, Timestamp orderDate, float totalPrice, String status, Customer customer, List<OrderProductDetail> listProduct) {
+    public Order(int id, Timestamp orderDate, double totalPrice, String status, Customer customer, List<OrderProductDetail> listProduct) {
         this.id = id;
         this.orderDate = orderDate;
         this.totalPrice = totalPrice;
         this.status = status;
         this.customer = customer;
-        this.listProduct = listProduct;
+        this.listProduct = listProduct != null ? listProduct : new ArrayList<>();
     }
 
     public int getId() {
@@ -45,10 +46,10 @@ public class Order {
         this.orderDate = orderDate;
     }
 
-    public float getTotalPrice() {
+    public double getTotalPrice() {
         return totalPrice;
     }
-    public void setTotalPrice(float totalPrice) {
+    public void setTotalPrice(double totalPrice) {
         this.totalPrice = totalPrice;
     }
 
@@ -70,7 +71,7 @@ public class Order {
         return listProduct;
     }
     public void setListProduct(List<OrderProductDetail> listProduct) {
-        this.listProduct = listProduct;
+        this.listProduct = listProduct != null ? listProduct : new ArrayList<>();
     }
     
 }
