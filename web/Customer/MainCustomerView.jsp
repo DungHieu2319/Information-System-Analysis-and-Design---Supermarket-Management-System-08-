@@ -110,6 +110,18 @@
                 box-shadow: 0 8px 25px rgba(0,0,0,0.25);
                 z-index: 2;
             }
+            .alert-success {
+                width: 100%;
+                padding: 12px;
+                background: #e0ffe0;
+                color: #1a7f1a;
+                font-weight: bold;
+                border-left: 5px solid #28a745;
+                border-radius: 8px;
+                margin-bottom: 20px;
+                font-size: 18px;
+                box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+            }
             h1 {
                 margin-bottom: 25px;
                 color: #ff7b00;
@@ -157,11 +169,14 @@
         <div class="content-box">
 
             <% 
-                String msg = (String) request.getAttribute("msg");
+                String msg = request.getParameter("msg");
                 if (msg != null) { 
             %>
-                <p style="color: green; font-weight: bold; font-size: 20px;">
-                    <%= msg %>
+                <p style="color: #28a745; 
+                        font-weight: bold; 
+                        font-size: 18px; 
+                        margin-bottom: 15px;">
+                  Order placed successfully!
                 </p>
             <% } %>
 

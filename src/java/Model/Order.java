@@ -17,7 +17,7 @@ public class Order {
     private Timestamp orderDate;
     private double totalPrice;
     private String status;
-    private Customer customer;
+    private User customer;
     private List<OrderProductDetail> listProduct;
 
     public Order() {
@@ -60,10 +60,10 @@ public class Order {
         this.status = status;
     }
 
-    public Customer getCustomer() {
+    public User getCustomer() {
         return customer;
     }
-    public void setCustomer(Customer customer) {
+    public void setCustomer(User customer) {
         this.customer = customer;
     }
 
