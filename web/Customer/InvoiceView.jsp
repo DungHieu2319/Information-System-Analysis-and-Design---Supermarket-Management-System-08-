@@ -195,13 +195,7 @@
                 margin-bottom: 20px;
             }
 
-            .btn-row-left {
-                display: flex;
-                justify-content: flex-start;
-                margin-left: 20px;
-            }
-
-            .confirm-btn, .back-btn {
+            .confirm-btn {
                 width: 180px;
                 padding: 12px 22px;
                 border-radius: 12px;
@@ -218,10 +212,6 @@
             }
 
             .confirm-btn:hover {
-                transform: translateY(-2px);
-            }
-
-            .back-btn:hover {
                 transform: translateY(-2px);
             }
         </style>
@@ -305,13 +295,6 @@
                         <input type="hidden" name="msg" value="success">
                         <button class="confirm-btn" type="submit">Confirm</button>
                     </form>
-                </div>
-
-                <div class="btn-row-left">
-                    <button class="back-btn"
-                            onclick="window.location='<%= request.getContextPath() %>/Customer/OnlineOrderView.jsp'">
-                        Back
-                    </button>
                 </div>
 
             </div>

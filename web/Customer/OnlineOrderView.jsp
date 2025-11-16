@@ -251,7 +251,7 @@
 
         <!-- Content Box -->
         <div class="content-box">
-            <h1>Order Online</h1>
+            <h1>Online Order</h1>
 
             <!-- Search -->
             <form action="<%= request.getContextPath() %>/ProductController" method="get" class="search-section">

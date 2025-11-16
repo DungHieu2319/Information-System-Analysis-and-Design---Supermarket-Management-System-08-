@@ -184,7 +184,7 @@
 
             <button class="btn-order"
                     onclick="window.location='<%=request.getContextPath()%>/Customer/OnlineOrderView.jsp'">
-                Order Online
+                Online Order
             </button>
 
         </div>
